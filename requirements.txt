@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+langchain
+langchain-community
+ollama
+streamlit
+requests
+sqlalchemy
+openpyxl
+python-dotenv
