@@ -13,44 +13,48 @@ A Python‑based AI chatbot application that demonstrates conversational AI capa
 - Easily extensible for new models or front‑ends
 
 ---
+Installation & Setup
+1. Clone the Repository
 
-## 🚀 Installation
-
-### Clone the repository
->> git clone https://github.com/sarahdelma/AI-Chatbot.git
->> cd AI-Chatbot
-
-
-## Create & activate a virtual environment
->> python -m venv venv
->> source venv/bin/activate 
-
-## Install dependencies
->> pip install -r requirements.txt
+git clone https://github.com/sarahdelma/AI-Chatbot.git
+cd AI-Chatbot
 
 
-## Configuration
+2. Create & Activate a Virtual Environment
+
+python -m venv venv
+source venv/bin/activate   # Linux/macOS
+# For Windows:
+# venv\Scripts\activate
+
+3. Install Dependencies
+   
+pip install -r requirements.txt
+
+4. Configuration
+
+Create a .env file with your credentials:
 
 OPENAI_API_KEY=your_api_key_here
 DB_URL=your_database_url
-- Keep your keys secret and never commit .env to Git. Add it to .gitignore.
-
-## Running the Chatbot
-- Run locally
-  >> python main.py
-- Using Docker (optional)
-  >> docker build -t ai‑chatbot
-- Run with Docker Compose:
-  >> docker‑compose up
 
 
-  ### OUTPUT
-  - Example Usage
-    
-  > python main.py
-    Hello! Ask anything:
-  > What’s the weather today?
-    Bot: …
+Security tip: Never commit your .env file to Git. Add it to .gitignore.
 
+5. Running the Chatbot
+Option A: Run Locally
 
-Customize prompting and logic by editing llm_chain.py
+python main.py
+
+Option B: Using Docker (Optional)
+
+docker build -t ai-chatbot .
+docker run -p 5000:5000 ai-chatbot
+
+Option C: Using Docker Compose
+
+docker-compose up
+
+6. Example Usage
+
+python main.py
