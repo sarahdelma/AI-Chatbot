@@ -14,6 +14,8 @@ A Python‑based AI chatbot application that demonstrates conversational AI capa
 
 ---
 Installation & Setup
+''' bash
+
 1. Clone the Repository
 
 git clone https://github.com/sarahdelma/AI-Chatbot.git
